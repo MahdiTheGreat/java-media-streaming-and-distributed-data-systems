@@ -7,23 +7,23 @@ In this project, we use Hadoop-3.2.2 and also set replication to one (since we a
 
 To create the cluster, We assign 1vCPU, 1 GB RAM, and 20 GB of disk memory to the first virtual machine, and 2vCPU and more memory (for example, 2 GB) to the second and third virtual machines. If the steps have been followed correctly, the installation is done in such a way that the first virtual machine assumes the roles of NameNode and ResourceManager and the second and third virtual machines assume the roles of DataNode and NodeManager. Using the jps command we can see if we have done things correctly, as can be seen below:
 
-![image](https://github.com/MahdiTheGreat/TweetsMapreduce/assets/47212121/5964a19c-b3a1-43f0-8934-b11e3544788b)
+![image](assets/image_1.png)
 
-![image](https://github.com/MahdiTheGreat/TweetsMapreduce/assets/47212121/539a5579-7d40-428c-8de1-a6454aa2123c)
+![image](assets/image_2.png)
 
-![image](https://github.com/MahdiTheGreat/TweetsMapreduce/assets/47212121/71efbdbf-a093-4f67-8e54-1b57f852acdc)
+![image](assets/image_3.png)
 
 The ‎WebGUI‏ of the cluster can also be accessed from our computer:
 
-![image](https://github.com/MahdiTheGreat/TweetsMapreduce/assets/47212121/225b1fa7-03e3-4c10-9c10-defec98313bb)
+![image](assets/image_4.png)
 
-![image](https://github.com/MahdiTheGreat/TweetsMapreduce/assets/47212121/5cd1c4de-98a9-464f-9bf2-387d5617580e)
+![image](assets/image_5.png)
 
 From the active nodes section in WebGUI, we can get some information about the nodes' resources and examine the correlation of this information with the resources we have assigned to the virtual machines. As can be seen in the images below, the accessible external memory is equal to 19.56 GB, which is close to the memory allocated to the primary VM (with NameNode), which is equal to 20 GB, of which 4.31 GB is allocated to DFS. It can also be seen that the number of live nodes is equal to two, and these nodes are h-secondary1 and h-secondary2, which have the data nodes, and each has access to 9.78 GB (total equal to 19.56 ) of external memory.
 
-![image](https://github.com/MahdiTheGreat/TweetsMapreduce/assets/47212121/8a1a910f-bbcf-4c47-8c3c-d9bfe1560dfa)
+![image](assets/image_6.png)
 
-![image](https://github.com/MahdiTheGreat/TweetsMapreduce/assets/47212121/498e47fe-e6ce-40df-8c7a-8e116b2e7095)
+![image](assets/image_7.png)
 
 # Dataset Description 
 This dataset contains 172 million tweets about the US election. The records of this dataset have 21 columns. You can see the available information about the columns of this dataset in the link below.

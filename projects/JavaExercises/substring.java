@@ -1,6 +1,7 @@
 package com.company;
 import java.util.*;
 
+/*
 We write a program that first takes n integers and then n strings from the input. The output of the program will be the largest string like S, each string having S or its inverse as a substring. If there is no shared substring, print nothing. The sub-string that is printed in the output should be in the form that is in the first string.
 For example, in the following example, 'CDEF' should be printed, and not 'FEDC'
 example input:
@@ -10,7 +11,7 @@ FEDCAB
 GHCDEFJK
 example output:
 CDEF
- 
+*/
 
 public class Main {
 

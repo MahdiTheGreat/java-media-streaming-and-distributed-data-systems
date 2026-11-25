@@ -1,13 +1,13 @@
-# Media Streaming & Distributed Big Data Processing Systems
+# Java Systems: Media Streaming, Distributed Big Data & Algorithmic Architectures
 
-A consolidated engineering monorepo focused on large-scale distributed computing, event-driven audio streaming engines, and algorithmic simulation systems. The repository unites two primary flagship architectures: **Jpotify** (an event-driven desktop media player and streaming system in Java) and **TweetsMapreduce** (a multi-node Apache Hadoop YARN cluster executing distributed data processing across large-scale social datasets), alongside supporting algorithmic and state-machine systems.
+A consolidated Java engineering monorepo focused on large-scale distributed computing, event-driven audio streaming engines, and modular algorithmic systems. The repository unites three flagship Java systems: **Jpotify** (an event-driven desktop media player and streaming system in Java), **TweetsMapreduce** (a multi-node Apache Hadoop YARN cluster executing distributed data processing across large-scale social datasets), and **JavaExercises** (a comprehensive suite of classic algorithms, symbolic calculus engines, and transactional state machines), alongside modular Java domain models.
 
 ---
 
 ## Repository Architecture & Subtree Structure
 
 ```
-media-streaming-and-distributed-data-systems/
+java-media-streaming-and-distributed-data-systems/
 ├── projects/
 │   ├── Jpotify/                  # Desktop audio streaming application & playback engine
 │   │   ├── AddANewFriend.java    # Social network graph management & peer connection dispatch
@@ -32,9 +32,17 @@ media-streaming-and-distributed-data-systems/
 │   │   │   └── image_7.png       # Resource manager memory utilization breakdown
 │   │   └── README.md             # Full original Hadoop cluster and analysis documentation
 │   │
-│   └── SimpleProjects/           # Algorithmic simulation engines & domain models
-│       ├── FallingKingdom.c      # Macroeconomic state-machine governance simulation in C
-│       ├── gameOfLife.c          # Conway's Game of Life with dynamic perimeter grid expansion
+│   ├── JavaExercises/            # Algorithmic suite & object-oriented state machines
+│   │   ├── Ecommerce.java        # Multi-tier e-commerce and warehouse inventory lifecycle
+│   │   ├── FoodVendingMachine.java # Distributed automated vending network transaction engine
+│   │   ├── integral.java         # Symbolic polynomial integration and expression canonicalizer
+│   │   ├── IterativeMatrixCalculator.java # Iterative compound matrix linear algebra engine
+│   │   ├── minesweeper.java      # Discrete grid 8-neighbor mine proximity scanner
+│   │   ├── ParenthesesBalancer.java # Stack-based syntax validation and prefix extractor
+│   │   ├── substring.java        # Multi-string common and inverted pattern matcher
+│   │   └── README.md             # Original JavaExercises project documentation
+│   │
+│   └── SimpleProjects/           # Java algorithmic models & retail simulations
 │       ├── InternetShop.java     # Transactional retail inventory and accounting engine
 │       ├── matrixCalculator.java # Linear algebra engine with dimensional assertions
 │       ├── mineGame.java         # Discrete grid 8-connected proximity matrix generator
@@ -50,7 +58,7 @@ media-streaming-and-distributed-data-systems/
 
 ```mermaid
 graph TD
-    subgraph PrimaryPillars["Flagship Systems"]
+    subgraph PrimaryPillars["Flagship Java Architectures"]
         subgraph Media["Media Streaming Engine (Jpotify)"]
             J_GUI["GUI Event Layer (Swing)"]
             J_AUDIO["Audio Playback Engine (JavaZoom / MP3)"]
@@ -78,10 +86,11 @@ graph TD
         end
     end
 
-    subgraph Auxiliary["Algorithmic Systems (SimpleProjects)"]
-        S_CA["Conway's Cellular Automaton (Dynamic C Grid)"]
-        S_SM["Fallen Kingdom State Machine (Macroeconomic Vector)"]
-        S_LA["Matrix Linear Algebra Engine"]
+    subgraph Algorithmic["Algorithmic Systems (JavaExercises & SimpleProjects)"]
+        J_CALC["Symbolic Polynomial Integrator & Normalizer"]
+        J_PARSE["Stack-Based Syntax & Parenthesis Parser"]
+        J_MAT["Iterative Matrix Linear Algebra Engine"]
+        J_ECOMM["Retail Inventory & Vending State Machines"]
     end
 ```
 
@@ -104,9 +113,10 @@ graph TD
   * **Geospatial & Geopolitical Disambiguation:** Compares explicit geopolitical profile metadata against numerical bounding-box coordinate classification ($[\text{Longitude}_{\min}, \text{Longitude}_{\max}] \times [\text{Latitude}_{\min}, \text{Latitude}_{\max}]$), demonstrating the statistical divergence between self-reported country tags and raw geographical sensor coordinates.
 * **Telemetry & Monitoring:** Interfaced with native YARN and HDFS web dashboards to monitor physical cluster metrics, including memory allocation, live DataNode health, and distributed block replication factors.
 
-### 3. Algorithmic Simulation & Discrete State Machines (`SimpleProjects`)
-* **Cellular Automata with Dynamic Perimeter Expansion:** ANSI C implementation of John Conway's two-dimensional zero-player cellular automaton. Employs dynamic coordinate reallocation when living cell configurations reach boundary thresholds, eliminating artificial reflective boundary artifacts.
-* **Macroeconomic State-Space Strategy Simulation:** Text-based governance simulation tracking normalized 3-dimensional state vectors representing citizenry satisfaction, aristocratic stability, and treasury solvency under stochastic decision trees.
+### 3. Classic Algorithms, Symbolic Calculus & Domain State Machines (`JavaExercises`)
+* **Symbolic Calculus & Expression Canonicalization:** Accepts polynomial expressions and computes indefinite symbolic integrals, simplifying coefficients, eliminating degenerate terms, and normalizing descending exponent ordering.
+* **Deterministic Syntax Parsing:** Employs linear-time stack evaluation algorithms to identify maximal valid contiguous balanced bracket prefixes under strict FILO nesting constraints.
+* **Transactional State Machines:** Implements command-driven retail state machines and multi-unit vending networks modeling volumetric storage quotas, SKU inventories, customer wallets, and dynamic discount matrices.
 
 ---
 
@@ -115,4 +125,5 @@ graph TD
 Full commit history from the original source repositories has been preserved using `git subtree`:
 - `projects/Jpotify` originating from [Jpotify](https://github.com/MahdiTheGreat/Jpotify)
 - `projects/TweetsMapreduce` originating from [TweetsMapreduce](https://github.com/MahdiTheGreat/TweetsMapreduce)
+- `projects/JavaExercises` originating from [JavaExercises](https://github.com/MahdiTheGreat/JavaExercises)
 - `projects/SimpleProjects` originating from [SimpleProjects](https://github.com/MahdiTheGreat/SimpleProjects)
